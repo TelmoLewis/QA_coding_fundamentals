@@ -1,6 +1,6 @@
-math_mark = 0
-english_mark = 0
-ict_mark = 0
+math_mark = -1
+english_mark = -1
+ict_mark = -1
 
 while math_mark < 0 or math_mark > 100:
     math_mark = int(input("enter your maths mark between 0 and 100: "))
