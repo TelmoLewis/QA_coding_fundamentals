@@ -1,11 +1,11 @@
-investment = 100
-target = 1000
-interest = 0.10
+initial_investment = float(input("intial investment: £"))
+target_value = float(input("target value: £"))
+interest_rate = float(input("interest rate: %")) /100
 
 years = 0
 
-while investment < target:
-    investment *= (1 + interest)
+while initial_investment < target_value:
+    initial_investment *= (1 + interest_rate)
     years += 1
 
-print(f"It will take around {years} years for investment of £100 to reach to £{target}"
+print(f"it will take {years} years to grow to £{target_value}")
