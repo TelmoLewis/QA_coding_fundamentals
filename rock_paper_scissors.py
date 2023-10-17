@@ -41,7 +41,7 @@ while True:
     else:
         draw += 1
 
-    rounds_played =+ 1
+    rounds_played += 1
 
     print(f"User wins: {user_wins}, Computer wins: {computer_wins}, Draw: {draw}, Rounds played: {rounds_played}")
 
