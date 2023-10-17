@@ -12,7 +12,7 @@ def getIncomeTax(salary):
 
     return (34500 - personal_allowance) * 0.20 + (150000 - 34500) * 0.40 + (salary - 150000) * 0.45  # Taxed at 45%
 
-# Example usage:
+
 salary = 150000  # Change this to test different income levels
 tax = getIncomeTax(salary)
 print("Income Tax: £{:.2f}".format(tax))
