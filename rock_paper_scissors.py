@@ -14,7 +14,7 @@ def get_computer_choice():
 def determine_winner(user_choice, computer_choice):
    outcomes = {("rock", "scissors"), ("paper", "rock"), ("scissors", "paper")}
    if user_choice == computer_choice:
-       return "Its a tie!!!"
+       return "Its a draw!!!"
    if (user_choice, computer_choice) in outcomes:
        return "You win!!!"
    else:
@@ -22,7 +22,7 @@ def determine_winner(user_choice, computer_choice):
 
 user_wins = 0
 computer_wins = 0
-a_tie = 0
+draw = 0
 rounds_played = 0
 
 while True:
@@ -39,11 +39,11 @@ while True:
     elif "Computer wins!!!" in result:
         computer_wins += 1
     else:
-        a_tie += 1
+        draw += 1
 
     rounds_played =+ 1
 
-    print(f"User wins: {user_wins}, Computer wins: {computer_wins}, A tie: {a_tie}, Rounds played: {rounds_played}")
+    print(f"User wins: {user_wins}, Computer wins: {computer_wins}, Draw: {draw}, Rounds played: {rounds_played}")
 
     play_again = input("Play again (YES/NO): ").strip().lower()
     if play_again != "yes":
