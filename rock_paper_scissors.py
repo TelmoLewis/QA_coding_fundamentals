@@ -15,7 +15,7 @@ def determine_winner(user_choice, computer_choice):
    outcomes = {("rock", "scissors"), ("paper", "rock"), ("scissors", "paper")}
    if user_choice == computer_choice:
        return "Its a draw!!!"
-   if (user_choice, computer_choice) in outcomes:
+   elif (user_choice, computer_choice) in outcomes:
        return "You win!!!"
    else:
        print("Computer Wins!!!")
